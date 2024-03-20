@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Submission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Speaker Submission</h1>
+    </header>
+    <p>Want to speak our Conference? Fill out this form</p>
+      
+
+    <form method="post" action="">
+        <fieldset>
+            <label for="first-name">Enter your First Name: <input id="first-name" name="first-name" type="text" required/></label>
+            <label for="last-name">Enter your Last Name: <input id="last-name" name="last-name" type="text" required/></label>
+            <label for="email">Enter your Email: <input id="email" name="email" type="email" required/></label>
+            <label for="age">Input your Age (years): <input id="age" name="age" type="number" min="18" max="60"required/></label>
+            <label for="t-shirt">T-Shirt Size:
+                <select id="t-shirt" name="t-shirt">
+                    <option value="">(select one)</option>
+                    <option value="xs">Extra Small</option>
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="lx">Extra Large</option>
+                </select>
+            </label>
+            <!--<div class="form-row">
+                <label for="t-shirt">T-Shirt Size:</label>
+                <select id="t-shirt" name="t-shirt">
+                    <option value="">(select one)</option>
+                    <option value="xs">Extra Small</option>
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+                    <option value="lx">Extra Large</option>
+                </select>
+            </div>-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Type of Seminar (required)</legend>
+            <label for="main-stage"><input id="main-stage" type="radio" name="seminar-type" class="inline"/>Main Stage</label>
+            <label for="work-stage"><input id="work-stage" type="radio" name="seminar-type" class="inline"/>Work Stage</label>
+        
+        </fieldset>
+
+        <fieldset>
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">Facebook</option>
+                    <option value="2">Instagram</option>
+                    <option value="3">X</option>
+                    <option value="4">Tiktok</option>
+                    <option value="5">Youtube Channel</option>
+                    <option value="6">Other</option>
+                </select>
+            </label>
+
+            <label for="abstract">Abstract:
+                <textarea id="abstract" name="abstract" cols="50" placeholder="Describe your talk in 500 words or less..."></textarea>
+            </label>
+
+            
+        </fieldset>
+
+        <label class="checkbox" for="available">
+            <input class="inline" id="available" type="checkbox" name="available"/>I'm available the day of the talk
+        </label>
+
+        <input type="submit" value="Submit"/>
+    </form>
+
+
+      <h2>Be our Speaker</h2>
+</body>
+</html>
